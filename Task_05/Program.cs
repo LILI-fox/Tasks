@@ -11,7 +11,7 @@ Random random = new Random();               // можно использоват
 // Random random = new();                    - сокращенная запись
 // var random = new Random();                - var сам определяет тип данных, чтоб не повторять
 
-int number = random.Next(10, 100);           //двузначноге число
+int number = random.Next(10, 100);           //двузначное число
 
 Console.WriteLine(number);
 
