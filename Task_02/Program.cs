@@ -3,7 +3,7 @@
 
 int n = int.Parse(Console.ReadLine());
 
-if (n<1 | n>8)
+if (n<1 | n>=8)
 {
     Console.WriteLine("Неправильно ввели число");
 }
