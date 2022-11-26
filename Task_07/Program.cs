@@ -17,5 +17,5 @@ int result = numberB%numberA;
  }
  else
  {
-    Console.WriteLine("Остаток деления: " + result);
+    Console.WriteLine("Числа не кратные. Остаток деления: " + result);
  }
