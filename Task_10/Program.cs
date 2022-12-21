@@ -1,12 +1,12 @@
-﻿// Напишите программу, которая принимает на вход координаты точки (x,y),
-//причем x /=, y/=0 и выдает номер четверти плоскости, в которой находится эта точка.
+﻿// Демонстрационная задача 17: Напишите программу, которая принимает на вход координаты точки (x,y),
+//причем x /=0, y /=0 и выдает номер четверти плоскости, в которой находится эта точка.
 
 Console.WriteLine("Введите координату х");
 bool isParsedX = int.TryParse(Console.ReadLine(), out int x);
 Console.WriteLine("Введите координату y");
 bool isParsedY = int.TryParse(Console.ReadLine(), out int y);
 
-if (!isParsedX || !isParsedY)
+if (!isParsedX || !isParsedY || x==0 || y==0)
 {
     Console.WriteLine("Координаты ввели некорректно");
     return;
@@ -25,7 +25,7 @@ if(quarterNumber == -1)
 
 Console.WriteLine($"Номер четверти: {quarterNumber} ");
 
-//получит номер четверти по координатам - метод
+//получить номер четверти по координатам - метод
 int GetQuarterNumberByCoordinates(int x, int y)
 {
     if (x > 0 && y > 0)

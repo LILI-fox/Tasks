@@ -13,29 +13,31 @@ if (!isParsed)
 
 GetCoordinatesByQuarterNumber(number);
 
-void GetCoordinatesByQuarterNumber(int number)
+if (number>4)
+{
+    Console.WriteLine("Номер четверти ввели не корректно");
+}
+
+int GetCoordinatesByQuarterNumber(int number)
 {
     if (number == 1)
     {
         Console.WriteLine("x > 0 && y > 0");
-        return;
     }
 
     if (number == 2)
     {
         Console.WriteLine("x < 0 && y > 0");
-        return;
     }
 
     if (number == 3)
     {
         Console.WriteLine("x < 0 && y < 0");
-        return;
     }
 
     if (number == 4)
     {
         Console.WriteLine("x > 0 && y < 0");
-        return;
     }
+    return -1;
 }
