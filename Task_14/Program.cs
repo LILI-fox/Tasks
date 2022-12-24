@@ -25,7 +25,7 @@ int GetSumOfNumberInINterval(int number)
 }
 
 //testing
-
+/*
 int[] numbers = new int[] { 1, 2, 3, 4 };
 int[] sums = new int[] { 1, 3, 6, 10 };
 
@@ -40,4 +40,4 @@ for (var i=0; i<number.Lenght; i++)
     {
         Console.WriteLine("okay");
     }
-}
+}*/
