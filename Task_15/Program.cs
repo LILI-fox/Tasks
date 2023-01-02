@@ -2,23 +2,27 @@
 // и выдаёт количество цифр в числе.
 // 456 -> 3 78 -> 2 89126 -> 5
 
- int number = int.Parse(Console.ReadLine());
+Console.WriteLine("Insert number: ");
 
-int result = GetNumberOfDigits(number);
+bool isParsed = int.TryParse(Console.ReadLine(), out int n);
+
+if(!isParsed|| n==0)
+{
+    Console.WriteLine("Insert correct number!");
+}    
+
+int GetSumOfDigits(int n)
+{
+    int count = 0;
+    for (; n != 0; count++)
+    {
+        n = n / 10;
+    }
+    return count;
+}
+
+
+int result = GetSumOfDigits(n);
 
 Console.WriteLine(result);
-
-int GetNumberOfDigits(int number)
-{
-    int i =0;
-    for(; number>0;i++)
-    {
-        number/=10;
-    }
-    return i;
-} 
-
-// Задача 30: Напишите программу, которая выводит массив из 8 элементов, 
-// заполненный нулями и единицами в случайном порядке.
-// [1,0,1,1,0,1,0,0]
 
