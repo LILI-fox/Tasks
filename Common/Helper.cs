@@ -16,4 +16,16 @@ public static class Helper
                     }
                 return array;
                 }
+    public static int InputNumber()
+    {
+        bool isParsed = int.TryParse(Console.ReadLine(), out int number);
+        if(isParsed)
+        {
+            return number;
+        }
+        else
+        {
+            throw new Exception("Введите корректное число!");
+        }
+    }
 }
